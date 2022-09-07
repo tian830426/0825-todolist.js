@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- font-awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Helen Lin Todo List :)</h1>
+    </header>
+    <form>
+      <!-- required 須與 <form> 同時使用才會起作用 -->
+      <!-- required 防呆機制可以偵測是否輸入正確的格式內容 但不同瀏覽器不ㄧ定適用 可另外寫js-->
+      <!-- placeholder 預設值-->
+
+      <!-- 輸入要做的事情 -->
+      <input type="text" value="java script" />
+      <!-- 輸入月份 -->
+      <input
+        type="number"
+        min="1"
+        max="12"
+        placeholder="M"
+        value="4"
+        required
+      />
+      <!-- 輸入日期 -->
+      <input
+        type="number"
+        min="1"
+        max="31"
+        placeholder="D"
+        value="26"
+        required
+      />
+      <!-- 設定按鈕 -->
+      <button type="submit">Add Into List</button>
+    </form>
+
+    <!-- 整理並排序 -->
+    <div class="sort">
+      <button>sort by time</button>
+    </div>
+    <!-- 用JS控制讓新增的內容放置在裡面 -->
+    <section></section>
+    <script src="./all.js"></script>
+  </body>
+</html>
